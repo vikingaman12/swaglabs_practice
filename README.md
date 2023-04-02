@@ -1,6 +1,6 @@
 # swaglabs_practice
 
-This is a simple Automation FrameWork Project that I am currently Practicing to dhow and improve my skills.
+This is a simple Automation FrameWork Project that I am currently Practicing to show and improve my skills.
 
 ## Project Title:
 An End to End Selenium Webdriver Project with Java.
