@@ -20,10 +20,6 @@ public class AddToCartAndOrder_Commondata {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		
-//		driver.get("https://www.saucedemo.com/");
-//		driver.findElement(By.id("user-name")).sendKeys("standard_user");
-//		driver.findElement(By.id("password")).sendKeys("secret_sauce");
-		
 		FileInputStream fis = new FileInputStream("./src/test/resources/commondata.properties");
 		Properties pro = new Properties();
 		pro.load(fis);
