@@ -28,10 +28,6 @@ public class AddToCartAndOrder {
 		 */
 		PropertyFile plib = new PropertyFile();
 		LoginPage login = new LoginPage(driver);
-//		driver.get(plib.getPropertyKeyValue("url"));
-//		driver.findElement(By.id("user-name")).sendKeys(plib.getPropertyKeyValue("username"));
-//		driver.findElement(By.id("password")).sendKeys(plib.getPropertyKeyValue("password"));
-		
 		String URL = plib.getPropertyKeyValue("url");
 		String UN = plib.getPropertyKeyValue("username");
 		String PWD = plib.getPropertyKeyValue("password");
