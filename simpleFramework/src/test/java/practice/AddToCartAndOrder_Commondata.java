@@ -9,7 +9,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
-//addtocart and order using commondata for login
+//addTocart and order using commonData for login
 
 public class AddToCartAndOrder_Commondata {
 	public static void main(String[] args) throws Throwable {
