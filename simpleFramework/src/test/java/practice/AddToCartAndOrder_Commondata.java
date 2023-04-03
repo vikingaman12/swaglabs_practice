@@ -49,6 +49,7 @@ public class AddToCartAndOrder_Commondata {
 		driver.navigate().to("https://www.saucedemo.com/");
 		Thread.sleep(1000);
 		driver.close();
+		System.out.println();
 
 
 	}

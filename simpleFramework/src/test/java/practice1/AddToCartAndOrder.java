@@ -52,7 +52,7 @@ public class AddToCartAndOrder {
 		driver.findElement(By.id("back-to-products")).click();
 		driver.navigate().to("https://www.saucedemo.com/");
 		Thread.sleep(1000);
-		driver.close();
+		//driver.close();
 
 	}
 
