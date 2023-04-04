@@ -1,7 +1,6 @@
-package practice1;
+package scripts;
 
 import java.time.Duration;
-
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -14,8 +13,8 @@ import pom.AddtoCart;
 import pom.CheckoutPage;
 import pom.LoginPage;
 
-public class AddToCartAndOrder {
-
+public class TestCase1 {
+	
 	public static void main(String[] args) throws Throwable {
 		String key = "webdriver.chrome.driver";
 		String value = "./src/main/resources/chromedriver.exe";
@@ -38,27 +37,15 @@ public class AddToCartAndOrder {
 		driver.get(URL);
 		login.loginToApp(UN, PWD);
 		
-		driver.getTitle();
-		Thread.sleep(1500);
-//		driver.findElement(By.xpath("//div[text()='Sauce Labs Backpack']")).click();
-//		driver.findElement(By.id("add-to-cart-sauce-labs-backpack")).click();
 		AddtoCart ad = new AddtoCart(driver);
 		ad.clickSauceLabBackpack();
 		ad.addToCartSauceLabBackpack();
-//		driver.findElement(By.xpath("//button[@data-test='back-to-products']")).click();
 		ad.backToproductsPage();
-//		driver.findElement(By.xpath("//a[@class='shopping_cart_link']")).click();
 		ad.goToCartPage();
-//		driver.findElement(By.id("checkout")).click();
 		ad.goToCheckoutPage();
 		Thread.sleep(1500);
-//		driver.findElement(By.id("first-name")).sendKeys(ef.getExcelData("contactDetails", 1, 0));
 		CheckoutPage cp = new CheckoutPage(driver);
-//		String firstnamedata = ef.getExcelData("contactDetails", 1, 0);
-//		cp.firstNameTextField(firstnamedata);
 		cp.firstNameTextField(ef.getExcelData("contactDetails", 1, 0));
-//		driver.findElement(By.id("last-name")).sendKeys(ef.getExcelData("contactDetails", 1, 1));
-//		driver.findElement(By.id("postal-code")).sendKeys(ef.getExcelData("contactDetails", 1, 2));
 		cp.lastNameTextField(ef.getExcelData("contactDetails", 1, 1));
 		cp.postalCodeTextField(ef.getExcelData("contactDetails", 1, 2));
 		Thread.sleep(1500);
@@ -67,9 +54,6 @@ public class AddToCartAndOrder {
 		Thread.sleep(1000);
 		driver.findElement(By.id("back-to-products")).click();
 		driver.navigate().to("https://www.saucedemo.com/");
-		Thread.sleep(1000);
-		//driver.close();
-
+		driver.close();
 	}
-
 }

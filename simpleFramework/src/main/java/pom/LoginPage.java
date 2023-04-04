@@ -35,5 +35,6 @@ public class LoginPage {
 	public void loginToApp(String username,String password)	{
 		UNTextField.sendKeys(username);
 		PWTextField.sendKeys(password);
+		SubmitButton.click();
 	}
 }
