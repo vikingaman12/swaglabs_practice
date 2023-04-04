@@ -8,6 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.*;
 
 //changes
+// final scripts are in test/java/scripts folder these are just for  self Understanding and practice 
 
 public class AddToCartAndOrder {
 
