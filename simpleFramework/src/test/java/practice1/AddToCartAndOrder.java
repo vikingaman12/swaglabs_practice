@@ -14,6 +14,8 @@ import pom.AddtoCart;
 import pom.CheckoutPage;
 import pom.LoginPage;
 
+// final scripts are in test/java/scripts folder these are just for  self Understanding and practice
+
 public class AddToCartAndOrder {
 
 	public static void main(String[] args) throws Throwable {
